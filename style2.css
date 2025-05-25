@@ -169,6 +169,11 @@ main {
     margin-top: 10px;
 }
 
+.enderecoetelefone p {
+    text-align: center;
+    padding-left: -10px;
+}
+
 /* Rodapé */
 .rodapeDoCriador {
     background-color: black;
