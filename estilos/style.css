@@ -143,25 +143,37 @@ main article {
 }
 
 /* Rodapé */
+footer{
+    background-color: rgb(34, 34, 34);
+    
+    color: white;
+}
+
+.titulo_do_rodape{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: 1.8em;
+    padding: 10px;
+}
+
 .enderecoetelefone {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
     background-color: rgb(34, 34, 34);
     color: white;
     margin-top: 20px;
-    padding: 20px 10px 10px;
+    
     text-align: center;
 }
 
-.enderecoetelefone > h4 {
-    font-weight: bolder;
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
 
-.enderecoetelefone > h3 {
-    font-size: 1.3em;
-    font-weight: bold;
-    margin-top: 15px;
-    margin-bottom: 10px;
+
+.titulos_das_informacoes_rodape{
+    font-size: 1.7em;
+    padding-bottom: 20px ;
+
 }
 
 .enderecoetelefone > p {
