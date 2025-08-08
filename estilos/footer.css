@@ -1,0 +1,47 @@
+.rodape {
+    padding: 1em;
+    background-color: var(--preto);
+    color: var(--branco);
+}
+
+.rodape__contato__titulo {
+    font-size: 1.8em;
+    font-weight: 300;
+    text-align: center;
+}
+
+.div__rodape__contato {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+.contato__titulo {
+    font-size: 1.5em;
+    padding-bottom: 0.5em;
+    text-align: center;
+}
+
+.contato__texto {
+    font-size: 0.9em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.rodape__direitos-autorais {
+    font-size: 1em;
+    font-style: italic;
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 0.7em;
+}
+
+.criador {
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.criador:hover {
+    color: var(--cinza-claro);
+}

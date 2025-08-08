@@ -1,10 +1,24 @@
 @charset "UFT-8";
 
+@import url('header.css');
+
+@import url('banner.css');
+
+@import url('footer.css');
+
 :root {
     --branco: white;
     --preto: black;
     --cinza-claro: lightgray;
+    --cinza-header: rgb(153, 151, 151);
 
     --font-principal: arial;
     --font_secundaria: arial;
+}
+
+body {
+    background-color: var(--cinza-claro);
+    font-family: var(--font-principal);
+    font-size: 1em;
+    font-weight: normal;
 }

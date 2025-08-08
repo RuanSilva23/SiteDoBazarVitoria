@@ -1,0 +1,42 @@
+.banner {
+    background-color: var(--branco);
+    padding: 1em;
+    border-radius: 4px;
+    margin-bottom: 1em;
+}
+
+.banner__titulo {
+    font-size: 2.6em;
+    font-weight: 500;
+    font-family: var(--font-principal);
+    text-align: center;
+
+}
+
+.banner__texto {
+    font-size: 1.1em;
+    font-family: var(--font-principal);
+    font-weight: 200;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.botao {
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+}
+
+.banner__botao {
+    background-color: rgb(53, 53, 240);
+    color: var(--branco);
+    font-size: 1.3em;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.8em;
+    border-radius: 6px;
+}
+
+.banner__botao:hover {
+    background-color: rgba(53, 53, 240, 0.766);
+}
