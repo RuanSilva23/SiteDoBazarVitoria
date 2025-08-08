@@ -4,40 +4,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bazar Vitória</title>
+  <link rel="stylesheet" href="estilos/reset.css">
   <link rel="stylesheet" href="estilos/style.css">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
 
   <header class="cabecalho">
-    <h1>Bazar Vitória</h1>
-    <p>Material de Construção | Vidraçaria | Drywall</p>
+    <h1 class="cabecalho__titulo">Bazar Vitória</h1>
+    <p class="cabecalho__texto">Material de Construção | Vidraçaria | Drywall</p>
   </header>
 
   <nav class="menu">
-    <a href="index.html">Home</a>
-    <a href="#">Notícias</a>
-    <a href="redessociais.html">Redes Sociais</a>
-    <a href="enderecoetelefone.html">Fale Conosco</a>
+    <a href="index.html" class="menu__link">Home</a>
+    <a href="#" class="menu__link">Notícias</a>
+    <a href="redessociais.html" class="menu__link">Redes Sociais</a>
+    <a href="enderecoetelefone.html" class="menu__link">Fale Conosco</a>
   </nav>
 
   <section class="banner">
         <div class="banner-conteudo">
-            <h2>Transforme sua casa com qualidade e economia</h2>
-            <p>Drywall, vidraçaria e material de construção com o melhor preço da região.</p>
-            <a href="#contato" class="botao-banner">Solicite um Orçamento</a>
+            <h2 class="banner__titulo">Transforme sua casa com qualidade e economia</h2>
+            <p class="banner__texto">Drywall, vidraçaria e material de construção com o melhor preço da região.</p>
+            <a href="#contato" class="banner__botao">Solicite um Orçamento</a>
         </div>
     </section>
 
-  <main>
-    <article class="primeiroArtigo">
-      <h2>Transforme seus ambientes com Drywall</h2>
-      <p>Oferecemos soluções modernas e práticas com Drywall para renovar o visual de qualquer ambiente. Nossa equipe é especializada e pronta para atender sua necessidade com qualidade, agilidade e bom gosto. Entre em contato para um orçamento personalizado.</p>
+  <main class="Principal">
+    <article class="artigo-1">
+      <h2 class="artigo-1__titulo">Transforme seus ambientes com Drywall</h2>
+      <p class="artigo-1__texto">Oferecemos soluções modernas e práticas com Drywall para renovar o visual de qualquer ambiente. Nossa equipe é especializada e pronta para atender sua necessidade com qualidade, agilidade e bom gosto. Entre em contato para um orçamento personalizado.</p>
     </article>
 
-    <article class="segundoArtigo">
-      <h2>O que fazemos</h2>
-      <p>Trabalhamos com venda de materiais de construção, instalação de Drywall, serviços de vidraçaria e muito mais. Buscamos sempre entregar o melhor serviço para nossos clientes, com atendimento humanizado e materiais de qualidade.</p>
+    <article class="artigo-2">
+      <h2 class="artigo-2__titulo">O que fazemos</h2>
+      <p class="artigo-2__texto">Trabalhamos com venda de materiais de construção, instalação de Drywall, serviços de vidraçaria e muito mais. Buscamos sempre entregar o melhor serviço para nossos clientes, com atendimento humanizado e materiais de qualidade.</p>
     </article>
 
     <article class="endereco">
@@ -47,21 +48,29 @@
     </article>
   </main>
 
-  <footer>
-    <section class="enderecoetelefone">
-      <h4>Temos o melhor preço e com qualidade garantida.</h4>
+  <footer class="rodape">
+    <section class="rodape__contato">
+      <h4 class="rodape__contato__titulo">Temos o melhor preço e com qualidade garantida.</h4>
 
-      <h3>Endereço</h3>
-      <p>Estrada Marechal Alencastro nº 3763 L.A, Anchieta</p>
-      <p>Rio de Janeiro - RJ, CEP: 21645-180</p>
-
-      <h3>Contatos</h3>
-      <p>(21) 98966-1166<br>
-         (21) 3019-9561</p>
-
-      <h3>Horário de Funcionamento</h3>
-      <p>Seg-Sex: 08h às 17h<br>
-         Sáb: 08h às 14h</p>
+      <div class="div__rodape__contato">
+        <div class="div__contato">
+          <h3 class="contato__titulo">Endereço</h3>
+          <p class="contato__texto">Estrada Marechal Alencastro nº 3763 L.A, Anchieta</p>
+          <p class="contato__texto">Rio de Janeiro - RJ, CEP: 21645-180</p>
+        </div>
+        
+        <div class="div__contato">
+          <h3 class="contato__titulo">Contatos</h3>
+          <p class="contato__texto">(21) 98966-1166<br>
+             (21) 3019-9561</p>
+        </div>
+        
+        <div class="div__contato">
+          <h3 class="contato__titulo">Horário de Funcionamento</h3>
+          <p class="contato__texto">Seg-Sex: 08h às 17h<br>
+             Sáb: 08h às 14h</p>
+        </div>
+      </div>
     </section>
 
     <section class="rodapeDoCriador">
