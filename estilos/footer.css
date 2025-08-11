@@ -13,7 +13,7 @@
 .div__rodape__contato {
     display: flex;
     justify-content: space-around;
-    padding: 1em;
+    padding: 1em 1em 2em;
 }
 
 .contato__titulo {
@@ -32,12 +32,13 @@
     font-size: 1em;
     font-style: italic;
     font-weight: 300;
+    color: var(--cinza-claro);
     text-align: center;
-    padding-bottom: 0.7em;
+    padding-bottom: 0.3em;
 }
 
 .criador {
-    color: var(--branco);
+    color: var(--cinza-claro);
     text-decoration: none;
     font-weight: 500;
 }
