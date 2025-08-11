@@ -4,13 +4,15 @@
 
 @import url('banner.css');
 
+@import url('main.css');
+
 @import url('footer.css');
 
 :root {
     --branco: white;
     --preto: black;
     --cinza-claro: lightgray;
-    --cinza-header: rgb(153, 151, 151);
+    --cinza-header: linear-gradient(150.55deg, rgb(153, 151, 151) 30%, rgb(202, 200, 200) 70%);
 
     --font-principal: arial;
     --font_secundaria: arial;

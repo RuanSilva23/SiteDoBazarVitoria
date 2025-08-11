@@ -1,0 +1,31 @@
+.Principal {
+    background-color: var(--branco);
+    padding: 1em;
+    margin: 0 2em 1em;
+    box-shadow: 2px 6px 8px 6px rgba(0, 0, 0, 0.26);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.artigo-1__titulo, .artigo-2__titulo {
+    font-size: 2em;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.342);
+}
+
+.artigo-1__texto, .artigo-2__texto {
+    font-size: 1.1em;
+    text-align: justify;
+    text-indent: 15px;
+    padding: 0.6em;
+}
+
+.artigo-2__titulo {
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.imagem1 {
+    width: 50%;
+    margin-left: 25%;
+    padding: 0.5em 0;
+}

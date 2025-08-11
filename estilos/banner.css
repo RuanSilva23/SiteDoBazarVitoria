@@ -2,7 +2,7 @@
     background-color: var(--branco);
     padding: 1em;
     border-radius: 4px;
-    margin-bottom: 1em;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.096);
 }
 
 .banner__titulo {
