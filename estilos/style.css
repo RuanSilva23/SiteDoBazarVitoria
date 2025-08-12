@@ -13,6 +13,11 @@
     --preto: black;
     --cinza-claro: lightgray;
     --cinza-header: linear-gradient(150.55deg, rgb(153, 151, 151) 30%, rgb(202, 200, 200) 70%);
+    --cinza-azulado: #96A4AD;
+    --branco-novo: #F2F2F2;
+    --cinza: #BFBFBF;
+    --cinza-escuro: #737373;
+    --cinza-arroxado: #92929C;
 
     --font-principal: arial;
     --font_secundaria: arial;
