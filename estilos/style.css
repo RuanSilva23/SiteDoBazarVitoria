@@ -11,7 +11,7 @@
 :root {
     --branco: white;
     --preto: black;
-    --cinza-claro: lightgray;
+    --cinza-claro: #d3d3d3;
     --cinza-header: linear-gradient(150.55deg, rgb(153, 151, 151) 30%, rgb(202, 200, 200) 70%);
     --cinza-azulado: #96A4AD;
     --branco-novo: #F2F2F2;
@@ -24,7 +24,7 @@
 }
 
 body {
-    background-color: var(--cinza-claro);
+    background-color: var(--branco-novo);
     font-family: var(--font-principal);
     font-size: 1em;
     font-weight: normal;
