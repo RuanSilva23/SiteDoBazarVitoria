@@ -3,81 +3,385 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bazar Vitória</title>
+  <title>Bazar Vitória | Especialistas em Construção a Seco, Drywall e Gesso no Rio de Janeiro</title>
+  <meta name="description" content="Bazar Vitória: especialista em construção a seco no Rio de Janeiro. Paredes, forros e sancas em drywall, divisórias, isolamento acústico, materiais e vidraçaria. Peça seu orçamento.">
+  <meta name="keywords" content="drywall, construção a seco, forro de gesso, parede drywall, divisória, sanca, Rio de Janeiro, Anchieta, vidraçaria, material de construção">
+  <meta name="theme-color" content="#0d1117">
+  <meta property="og:title" content="Bazar Vitória | Especialistas em Construção a Seco">
+  <meta property="og:description" content="Drywall, forros, divisórias e acabamentos de alto padrão com precisão, rapidez e limpeza de obra.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="imagens/hero-drywall.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="estilos/reset.css">
   <link rel="stylesheet" href="estilos/style.css">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Bazar Vitória",
+    "description": "Especialistas em construção a seco: drywall, forros, divisórias, materiais de construção e vidraçaria.",
+    "telephone": ["+55 21 98966-1166", "+55 21 3019-9561"],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Estrada Marechal Alencastro, 3763 L.A, Anchieta",
+      "addressLocality": "Rio de Janeiro",
+      "addressRegion": "RJ",
+      "postalCode": "21645-180",
+      "addressCountry": "BR"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "17:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "14:00" }
+    ]
+  }
+  </script>
 </head>
 <body>
 
-  <header class="cabecalho">
-    <h1 class="cabecalho__titulo">Bazar Vitória</h1>
-    <p class="cabecalho__texto">Material de Construção | Vidraçaria | Drywall</p>
+  <a href="#conteudo" class="pular-link">Pular para o conteúdo</a>
+
+  <!-- ============ CABEÇALHO ============ -->
+  <header class="cabecalho" id="topo">
+    <div class="container cabecalho__interno">
+      <a href="#topo" class="logo" aria-label="Bazar Vitória - início">
+        <span class="logo__marca" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12 16 4l12 8v16H4z"/><path d="M4 12h24M12 28V18h8v10"/></svg>
+        </span>
+        <span class="logo__texto">Bazar <strong>Vitória</strong></span>
+      </a>
+
+      <nav class="menu" id="menu" aria-label="Navegação principal">
+        <a href="#especialidade" class="menu__link">Especialidade</a>
+        <a href="#servicos" class="menu__link">Serviços</a>
+        <a href="#processo" class="menu__link">Processo</a>
+        <a href="#projetos" class="menu__link">Projetos</a>
+        <a href="#duvidas" class="menu__link">Dúvidas</a>
+        <a href="#contato" class="menu__link menu__link--cta">Orçamento</a>
+      </nav>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </header>
 
-  <nav class="menu">
-    <a href="index.html" class="menu__link">Home</a>
-    <a href="#" class="menu__link">Notícias</a>
-    <a href="redessociais.html" class="menu__link">Redes Sociais</a>
-    <a href="enderecoetelefone.html" class="menu__link">Fale Conosco</a>
-  </nav>
+  <main id="conteudo">
 
-  <section class="banner">
-        <div class="banner-conteudo">
-            <h2 class="banner__titulo">Transforme sua casa com qualidade e economia</h2>
-            <p class="banner__texto">Drywall, vidraçaria e material de construção com o melhor preço da região.</p>
-            <div class="botao"><a href="#contato" class="banner__botao">Solicite um Orçamento</a></div>
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-labelledby="hero-titulo">
+      <div class="hero__fundo" style="background-image:url('imagens/hero-drywall.jpg')" role="img" aria-label="Sala com forro de drywall e sancas iluminadas"></div>
+      <div class="hero__veu"></div>
+      <div class="container hero__conteudo">
+        <span class="selo reveal"><i class="selo__ponto"></i> Especialistas em Construção a Seco</span>
+        <h1 class="hero__titulo reveal" id="hero-titulo">
+          Construção a seco com <em>precisão de classe mundial.</em>
+        </h1>
+        <p class="hero__texto reveal">
+          Paredes, forros, sancas, divisórias e isolamento acústico em drywall — execução limpa, rápida e com acabamento de alto padrão, do projeto residencial ao corporativo.
+        </p>
+        <div class="hero__acoes reveal">
+          <a href="#contato" class="botao botao--primario">Solicite um orçamento
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="#projetos" class="botao botao--vidro">Ver projetos</a>
         </div>
+
+        <ul class="hero__metricas reveal">
+          <li><strong>Mais rápido</strong><span>sem espera de secagem da alvenaria</span></li>
+          <li><strong>Obra limpa</strong><span>menos entulho e menos desperdício</span></li>
+          <li><strong>Acabamento</strong><span>liso, preciso e sem retrabalho</span></li>
+        </ul>
+      </div>
+      <a href="#especialidade" class="hero__rolar" aria-label="Rolar para baixo"><span></span></a>
     </section>
 
-  <main class="Principal">
-    <article class="artigo-1">
-      <h2 class="artigo-1__titulo">Transforme seus ambientes com Drywall</h2>
-      <p class="artigo-1__texto">Oferecemos soluções modernas e práticas com Drywall para renovar o visual de qualquer ambiente. Nossa equipe é especializada e pronta para atender sua necessidade com qualidade, agilidade e bom gosto. Entre em contato para um orçamento personalizado.</p>
-    </article>
+    <!-- ============ FAIXA ============ -->
+    <div class="faixa" aria-hidden="true">
+      <div class="faixa__trilho">
+        <span>Drywall</span><span>Forro de gesso</span><span>Sancas e iluminação</span><span>Divisórias</span><span>Isolamento acústico</span><span>Steel frame leve</span><span>Vidraçaria</span><span>Materiais de construção</span>
+        <span>Drywall</span><span>Forro de gesso</span><span>Sancas e iluminação</span><span>Divisórias</span><span>Isolamento acústico</span><span>Steel frame leve</span><span>Vidraçaria</span><span>Materiais de construção</span>
+      </div>
+    </div>
 
-    <article class="artigo-2">
-      <h2 class="artigo-2__titulo">O que fazemos</h2>
-      <p class="artigo-2__texto">Trabalhamos com venda de materiais de construção, instalação de Drywall, serviços de vidraçaria e muito mais. Buscamos sempre entregar o melhor serviço para nossos clientes, com atendimento humanizado e materiais de qualidade.</p>
-    </article>
-
-    <article class="endereco">
-      <h2 class="artigo-2__titulo">Imagens de projetos</h2>
-      <img src="imagens/banner.png" alt="Imagem do Projeto 1" class="imagem1">
-      <p class="artigo-2__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ipsa eum magni eligendi sit. Recusandae, fugiat. Est voluptatem dolorum nihil fugiat illum autem distinctio consequuntur excepturi, exercitationem libero animi dolores!</p>
-    </article>
-  </main>
-
-  <footer class="rodape">
-    <section class="rodape__contato">
-      <h4 class="rodape__contato__titulo">Temos o melhor preço e com qualidade garantida.</h4>
-
-      <div class="div__rodape__contato">
-        <div class="div__contato">
-          <h3 class="contato__titulo">Endereço</h3>
-          <p class="contato__texto">Estrada Marechal Alencastro nº 3763 L.A, Anchieta</p>
-          <p class="contato__texto">Rio de Janeiro - RJ, CEP: 21645-180</p>
+    <!-- ============ ESPECIALIDADE ============ -->
+    <section class="secao" id="especialidade" aria-labelledby="esp-titulo">
+      <div class="container grade-2">
+        <div class="especialidade__midia reveal">
+          <img src="imagens/instalacao-drywall.jpg" alt="Equipe instalando placas de drywall sobre perfis de aço" loading="lazy">
+          <div class="especialidade__cartao">
+            <strong>Método</strong>
+            <span>Perfis de aço galvanizado + placas de gesso acartonado</span>
+          </div>
         </div>
-        
-        <div class="div__contato">
-          <h3 class="contato__titulo">Contatos</h3>
-          <p class="contato__texto">(21) 98966-1166<br>
-             (21) 3019-9561</p>
-        </div>
-        
-        <div class="div__contato">
-          <h3 class="contato__titulo">Horário de Funcionamento</h3>
-          <p class="contato__texto">Seg-Sex: 08h às 17h<br>
-             Sáb: 08h às 14h</p>
+
+        <div class="especialidade__texto reveal">
+          <span class="secao__etiqueta">Nossa especialidade</span>
+          <h2 class="secao__titulo" id="esp-titulo">A construção do futuro é <em>seca, limpa e precisa.</em></h2>
+          <p class="secao__texto">
+            A construção a seco é o padrão das grandes obras e dos melhores projetos de arquitetura no mundo. Na Bazar Vitória, dominamos essa técnica de ponta a ponta: do fornecimento do material à instalação, com equipe treinada e acabamento impecável.
+          </p>
+
+          <ul class="vantagens">
+            <li>
+              <span class="vantagens__icone">⚡</span>
+              <div><h3>Agilidade real</h3><p>Prazos menores que a alvenaria tradicional, sem esperar secagem.</p></div>
+            </li>
+            <li>
+              <span class="vantagens__icone">🧱</span>
+              <div><h3>Obra limpa</h3><p>Menos entulho, menos poeira e menos transtorno para o cliente.</p></div>
+            </li>
+            <li>
+              <span class="vantagens__icone">🔇</span>
+              <div><h3>Conforto acústico e térmico</h3><p>Sistemas com lã mineral e placas especiais para cada ambiente.</p></div>
+            </li>
+            <li>
+              <span class="vantagens__icone">📐</span>
+              <div><h3>Liberdade de design</h3><p>Curvas, nichos, sancas e rebaixos que valorizam qualquer projeto.</p></div>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <section class="rodape__direitos_criador">
-      <p class="rodape__direitos-autorais">&copy; 2025 Bazar Vitória. Todos os direitos reservados.</p>
-      <p class="rodape__direitos-autorais">Desenvolvido por <a href="https://www.linkedin.com/in/ruansilva23" target="_blank" class="criador">Ruan Silva</a></p>
+    <!-- ============ SERVIÇOS ============ -->
+    <section class="secao secao--escura" id="servicos" aria-labelledby="serv-titulo">
+      <div class="container">
+        <header class="secao__cabecalho reveal">
+          <span class="secao__etiqueta">Soluções completas</span>
+          <h2 class="secao__titulo" id="serv-titulo">Tudo o que sua obra precisa em <em>construção a seco</em></h2>
+          <p class="secao__texto">Atendemos residências, comércios, clínicas, escritórios e construtoras com sistemas dimensionados para cada necessidade.</p>
+        </header>
+
+        <div class="servicos">
+          <article class="servico reveal">
+            <span class="servico__numero">01</span>
+            <h3>Paredes e divisórias em drywall</h3>
+            <p>Paredes standard, resistentes à umidade (RU) e resistentes ao fogo (RF) para qualquer aplicação.</p>
+          </article>
+          <article class="servico reveal">
+            <span class="servico__numero">02</span>
+            <h3>Forros e rebaixos</h3>
+            <p>Forros lisos, removíveis e modulados com nivelamento perfeito e acabamento sem emendas.</p>
+          </article>
+          <article class="servico reveal">
+            <span class="servico__numero">03</span>
+            <h3>Sancas e iluminação indireta</h3>
+            <p>Sancas abertas e fechadas, molduras e fitas de LED embutidas que transformam o ambiente.</p>
+          </article>
+          <article class="servico reveal">
+            <span class="servico__numero">04</span>
+            <h3>Isolamento acústico e térmico</h3>
+            <p>Paredes duplas com lã de vidro ou lã de rocha para home theaters, consultórios e escritórios.</p>
+          </article>
+          <article class="servico reveal">
+            <span class="servico__numero">05</span>
+            <h3>Nichos, painéis e curvas</h3>
+            <p>Peças sob medida: painéis de TV, estantes em gesso, arcos e paredes curvas.</p>
+          </article>
+          <article class="servico reveal">
+            <span class="servico__numero">06</span>
+            <h3>Materiais e vidraçaria</h3>
+            <p>Placas, perfis, parafusos, massas e vidros num só lugar, com o melhor preço da região.</p>
+          </article>
+        </div>
+      </div>
     </section>
+
+    <!-- ============ PROCESSO ============ -->
+    <section class="secao" id="processo" aria-labelledby="proc-titulo">
+      <div class="container">
+        <header class="secao__cabecalho secao__cabecalho--centro reveal">
+          <span class="secao__etiqueta">Como trabalhamos</span>
+          <h2 class="secao__titulo" id="proc-titulo">Um processo <em>transparente</em> do orçamento à entrega</h2>
+        </header>
+
+        <ol class="processo">
+          <li class="processo__passo reveal">
+            <span class="processo__bolha">1</span>
+            <h3>Consulta e medição</h3>
+            <p>Entendemos sua necessidade e medimos o espaço com precisão.</p>
+          </li>
+          <li class="processo__passo reveal">
+            <span class="processo__bolha">2</span>
+            <h3>Orçamento detalhado</h3>
+            <p>Proposta clara com materiais, prazos e valores, sem surpresas.</p>
+          </li>
+          <li class="processo__passo reveal">
+            <span class="processo__bolha">3</span>
+            <h3>Execução especializada</h3>
+            <p>Equipe treinada, obra organizada e limpa todos os dias.</p>
+          </li>
+          <li class="processo__passo reveal">
+            <span class="processo__bolha">4</span>
+            <h3>Entrega e garantia</h3>
+            <p>Vistoria final com acabamento pronto para receber a pintura.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ PROJETOS ============ -->
+    <section class="secao secao--clara" id="projetos" aria-labelledby="proj-titulo">
+      <div class="container">
+        <header class="secao__cabecalho reveal">
+          <span class="secao__etiqueta">Portfólio</span>
+          <h2 class="secao__titulo" id="proj-titulo">Ambientes que mostram o <em>poder do drywall</em></h2>
+        </header>
+
+        <div class="galeria">
+          <figure class="galeria__item galeria__item--grande reveal">
+            <img src="imagens/hero-drywall.jpg" alt="Sala de estar com forro em sancas iluminadas e nichos em gesso" loading="lazy">
+            <figcaption><strong>Residencial</strong><span>Forro com sancas e nichos iluminados</span></figcaption>
+          </figure>
+          <figure class="galeria__item reveal">
+            <img src="imagens/drywall-residencial.jpg" alt="Quarto com painel curvo em drywall e iluminação embutida" loading="lazy">
+            <figcaption><strong>Quarto</strong><span>Painel em arco com LED</span></figcaption>
+          </figure>
+          <figure class="galeria__item reveal">
+            <img src="imagens/drywall-comercial.jpg" alt="Escritório com divisórias em drywall e forro com iluminação linear" loading="lazy">
+            <figcaption><strong>Comercial</strong><span>Divisórias e forro técnico</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="secao" id="duvidas" aria-labelledby="faq-titulo">
+      <div class="container container--estreito">
+        <header class="secao__cabecalho secao__cabecalho--centro reveal">
+          <span class="secao__etiqueta">Perguntas frequentes</span>
+          <h2 class="secao__titulo" id="faq-titulo">Tire suas <em>dúvidas</em> sobre drywall</h2>
+        </header>
+
+        <div class="faq reveal">
+          <details>
+            <summary>Drywall é resistente?</summary>
+            <p>Sim. Quando instalado com perfis e parafusos corretos, o sistema suporta cargas como TVs, prateleiras e armários com buchas apropriadas, além de contar com versões resistentes à umidade e ao fogo.</p>
+          </details>
+          <details>
+            <summary>Posso usar drywall em banheiros e áreas úmidas?</summary>
+            <p>Sim, com as placas RU (verdes) e a impermeabilização adequada. Nossa equipe indica a solução correta para cada ambiente.</p>
+          </details>
+          <details>
+            <summary>Quanto tempo leva uma obra em drywall?</summary>
+            <p>Bem menos que a alvenaria. Por não depender de secagem de argamassa, a maioria dos projetos residenciais é concluída em poucos dias, conforme a metragem.</p>
+          </details>
+          <details>
+            <summary>Vocês também vendem o material?</summary>
+            <p>Sim. Além de executar, vendemos placas, perfis, massas, parafusos e outros itens, inclusive para quem prefere comprar e instalar por conta própria.</p>
+          </details>
+          <details>
+            <summary>Como solicito um orçamento?</summary>
+            <p>Preencha o formulário abaixo ou chame no WhatsApp. Retornamos com agilidade para agendar a medição.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTATO ============ -->
+    <section class="secao secao--escura secao--contato" id="contato" aria-labelledby="cont-titulo">
+      <div class="container grade-2 grade-2--contato">
+        <div class="contato__info reveal">
+          <span class="secao__etiqueta">Fale conosco</span>
+          <h2 class="secao__titulo" id="cont-titulo">Vamos transformar seu projeto em <em>realidade.</em></h2>
+          <p class="secao__texto">Temos o melhor preço e qualidade garantida. Conte o que você precisa e receba um orçamento rápido.</p>
+
+          <ul class="contato__lista">
+            <li>
+              <span class="contato__icone">📍</span>
+              <div><h3>Endereço</h3><p>Estrada Marechal Alencastro, nº 3763 L.A, Anchieta<br>Rio de Janeiro - RJ, CEP: 21645-180</p></div>
+            </li>
+            <li>
+              <span class="contato__icone">📞</span>
+              <div><h3>Telefones</h3><p><a href="tel:+5521989661166">(21) 98966-1166</a><br><a href="tel:+552130199561">(21) 3019-9561</a></p></div>
+            </li>
+            <li>
+              <span class="contato__icone">🕗</span>
+              <div><h3>Horário de funcionamento</h3><p>Seg-Sex: 08h às 17h<br>Sáb: 08h às 14h</p></div>
+            </li>
+          </ul>
+        </div>
+
+        <form class="formulario reveal" id="formOrcamento" novalidate>
+          <h3 class="formulario__titulo">Solicite seu orçamento</h3>
+
+          <label class="campo">
+            <span>Seu nome</span>
+            <input type="text" id="nome" name="nome" placeholder="Como podemos te chamar?" required autocomplete="name">
+          </label>
+
+          <label class="campo">
+            <span>Tipo de serviço</span>
+            <select id="servico" name="servico" required>
+              <option value="">Selecione...</option>
+              <option>Parede / divisória em drywall</option>
+              <option>Forro / rebaixo de gesso</option>
+              <option>Sanca e iluminação</option>
+              <option>Isolamento acústico</option>
+              <option>Compra de materiais</option>
+              <option>Vidraçaria</option>
+              <option>Outro</option>
+            </select>
+          </label>
+
+          <label class="campo">
+            <span>Conte sobre o projeto</span>
+            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Metragem aproximada, bairro, prazo desejado..."></textarea>
+          </label>
+
+          <button type="submit" class="botao botao--primario botao--cheio" id="enviar">
+            Enviar pelo WhatsApp
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+          <p class="formulario__erro" id="formErro" role="alert" hidden>Preencha seu nome e o tipo de serviço.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ RODAPÉ ============ -->
+  <footer class="rodape">
+    <div class="container rodape__grade">
+      <div>
+        <a href="#topo" class="logo logo--rodape">
+          <span class="logo__marca" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12 16 4l12 8v16H4z"/><path d="M4 12h24M12 28V18h8v10"/></svg>
+          </span>
+          <span class="logo__texto">Bazar <strong>Vitória</strong></span>
+        </a>
+        <p class="rodape__resumo">Especialistas em construção a seco. Drywall, forros, divisórias, materiais de construção e vidraçaria.</p>
+      </div>
+      <nav aria-label="Rodapé">
+        <h4>Navegue</h4>
+        <a href="#especialidade">Especialidade</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <div>
+        <h4>Contato</h4>
+        <p>(21) 98966-1166<br>(21) 3019-9561</p>
+        <p>Anchieta, Rio de Janeiro - RJ</p>
+      </div>
+    </div>
+
+    <div class="rodape__direitos">
+      <div class="container rodape__direitos-interno">
+        <p>&copy; 2025 Bazar Vitória. Todos os direitos reservados.</p>
+        <p>Desenvolvido por <a href="https://www.linkedin.com/in/ruansilva23" target="_blank" rel="noopener" class="criador">Ruan Silva</a></p>
+      </div>
+    </div>
   </footer>
 
+  <a href="https://wa.me/5521989661166?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20de%20drywall." class="whatsapp" target="_blank" rel="noopener" aria-label="Falar no WhatsApp" id="botaoWhatsapp">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M20.5 3.5A11.8 11.8 0 0 0 12 0C5.4 0 .1 5.3.1 11.9c0 2.1.6 4.2 1.6 6L0 24l6.3-1.7a12 12 0 0 0 5.7 1.5c6.6 0 11.9-5.3 11.9-11.9 0-3.2-1.2-6.2-3.4-8.4zM12 21.8c-1.8 0-3.6-.5-5.1-1.4l-.4-.2-3.7 1 1-3.6-.2-.4a9.9 9.9 0 0 1-1.5-5.2C2.1 6.4 6.5 2 12 2c2.6 0 5.1 1 7 2.9a9.8 9.8 0 0 1 2.9 7c0 5.5-4.5 9.9-9.9 9.9zm5.4-7.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1l-.9 1.1c-.2.2-.3.2-.6.1a8 8 0 0 1-4-3.5c-.3-.5.3-.5.9-1.6.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.3 5.2 4.6 1.9.8 2.7.9 3.6.7.6-.1 1.8-.7 2.1-1.5.3-.7.3-1.3.2-1.5-.1-.1-.3-.2-.6-.3z"/></svg>
+  </a>
+
+  <script src="scripts/main.js"></script>
 </body>
 </html>
